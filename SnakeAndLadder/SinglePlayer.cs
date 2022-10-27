@@ -13,6 +13,15 @@ namespace SnakeAndLadder
             Console.WriteLine();
             Console.WriteLine("The Game Begins!");
             Console.WriteLine("Player Position : 0");
+
+            int startPosiion = 0;
+
+            Random random = new Random();
+            int dice = random.Next(1, 7);
+
+            Console.WriteLine();
+            Console.WriteLine("Dice has been Rolled: " + dice);
+
         }
     }
 }
