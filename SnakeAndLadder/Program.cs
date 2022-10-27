@@ -6,7 +6,19 @@
         {
             Console.WriteLine("Welcome to Snake and Ladder.");
 
-            
+            Console.WriteLine("Select option \n1.Single Player");
+            int option = Convert.ToInt32(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1:
+                    SinglePlayer.SinglePlayerGame();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Choice");
+                    break;
+            }
+
         }
     }
 }
